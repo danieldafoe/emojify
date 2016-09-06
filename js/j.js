@@ -281,11 +281,47 @@ var ed = {
             "n": "beer",
             "un": "\u{1F37A}"
         },
+        {
+            "n": "watermelon",
+            "un": "\u{1F349}"
+        },
+        {
+            "n": "banana",
+            "un": "\u{1F34C}"
+        },
+        {
+            "n": "apple",
+            "un": "\u{1F34E}"
+        },
+        {
+            "n": "strawberry",
+            "un": "\u{1F353}"
+        },
+        {
+            "n": "hamburger",
+            "un": "\u{1F354}"
+        },
+        {
+            "n": "pizza",
+            "un": "\u{1F355}"
+        },
+        {
+            "n": "bread",
+            "un": "\u{1F35E}"
+        },
+        {
+            "n": "cookie",
+            "un": "\u{1F36A}"
+        },
+        {
+            "n": "cherries",
+            "un": "\u{1F352}"
+        },
     ]
 };
 
 (function() {
-    window.location.hash = '🙈';
+    window.location.hash = "🙈";
     var b = document.getElementsByTagName('button');
     b[0].addEventListener('click', function() {
         var newT = [];
