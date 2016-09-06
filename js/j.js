@@ -214,6 +214,10 @@ var ed = {
             "un": "\u{1F436}"
         },
         {
+            "n": "cat",
+            "un": "\u{1F431}"
+        },
+        {
             "n": "pig",
             "un": "\u{1F437}"
         },
@@ -281,6 +285,7 @@ var ed = {
 };
 
 (function() {
+    window.location.hash = '🙈';
     var b = document.getElementsByTagName('button');
     b[0].addEventListener('click', function() {
         var newT = [];
