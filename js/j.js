@@ -106,6 +106,14 @@ var ed = {
             "un": "\u{1F68C}"
         },
         {
+            "n": "metro",
+            "un": "\u{1F867}"
+        },
+        {
+            "n": "bus",
+            "un": "\u{1F68C}"
+        },
+        {
             "n": "ambulance",
             "un": "\u{1F691}"
         },
@@ -124,6 +132,18 @@ var ed = {
         {
             "n": "automobile",
             "un": "\u{1F697}"
+        },
+        {
+            "n": "car",
+            "un": "\u{1F697}"
+        },
+        {
+            "n": "bicycle",
+            "un": "\u{1F6B2}"
+        },
+        {
+            "n": "airplane",
+            "un": "\u{2708}"
         },
         {
             "n": "toilet",
@@ -335,10 +355,11 @@ var ed = {
         for (var i = 0, l = tArr.length; i < l; i++) {
             // Loop through emoji names
             for (var j = 0, l2 = ed.data.length; j < l2; j++) {
-                if (tArr[i].indexOf(ed.data[j].n) !== -1) {
+                console.log()
+                if (tArr[i].toLowerCase().indexOf(ed.data[j].n) !== -1) {
                     // Replace instance of emoji name in string without
                     // changing any punctuation, etc
-                    newT.push(tArr[i].replace(ed.data[j].n, ed.data[j].un));
+                    newT.push(tArr[i].toLowerCase().replace(ed.data[j].n, ed.data[j].un));
                     break;
                 }
                 else {
