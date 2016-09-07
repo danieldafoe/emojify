@@ -56,6 +56,7 @@ h1 {
     font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 400;
     letter-spacing: -1.5px;
+    text-transform: capitalize;
     border-right: 1px solid #ccc
 }
 textarea {
