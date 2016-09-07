@@ -53,9 +53,9 @@ h1 {
     margin: 30px auto 45px auto;
     padding: 5px 30px 20px 0;
     font-size: 500%;
-    font-display: change;
-    font-family: 'Lobster Two', sans-serif;
-    font-weight: normal;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: -1.5px;
     border-right: 1px solid #ccc
 }
 textarea {
