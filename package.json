@@ -1,0 +1,27 @@
+{
+  "name": "emojify",
+  "version": "1.0.0",
+  "description": "Add emotion to your content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieldafoe/emojify.git"
+  },
+  "keywords": [
+    "emoji"
+  ],
+  "author": "Daniel Dafoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieldafoe/emojify/issues"
+  },
+  "homepage": "https://github.com/danieldafoe/emojify#readme",
+  "devDependencies": {
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}
