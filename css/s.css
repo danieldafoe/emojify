@@ -33,7 +33,7 @@ footer {
     background-color: #7948BB
 }
 button {
-    padding: 8px 30px;
+    padding: 10px 30px;
     border: 0;
     border-radius: 4px;
     font-size: 115%;
@@ -54,10 +54,10 @@ h1 {
     padding: 5px 30px 20px 0;
     font-size: 500%;
     font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: -1.5px;
     text-transform: capitalize;
-    border-right: 1px solid #ccc
+    border-right: 10px solid #fff
 }
 textarea {
     width: 100%;
@@ -88,14 +88,17 @@ p {
 }
 .cc {
     align-self: center;
-    padding: 15px
+    padding: 30px
+}
+.cc button {
+    margin: 0 0 10px
 }
 .e {
     font-size: 70%
 }
 .el {
     padding-left: 30px;
-    font-size: 350%
+    font-size: 400%
 }
 .es {
     font-size: 150%
@@ -125,12 +128,32 @@ p {
 }
 @media (max-width: 480px) {
     h1 {
-        font-size: 400%
+        font-size: 360%;
+        border-right-width: 8px
+    }
+    footer p {
+        padding: 0 5%;
+    }
+    footer a:last-of-type {
+        display: inline-block
     }
     .el {
         font-size: 300%
     }
     .mt {
-        max-width: 85%
+        max-width: 75%
+    }
+}
+@media (max-width: 340px) {
+    h1 {
+        margin-bottom: 1.5rem;
+        padding-right: 0;
+        border-right: 0;
+        border-bottom: 10px solid #fff
+    }
+    .el {
+        display: block;
+        padding-left: 0;
+        font-size: 400%
     }
 }

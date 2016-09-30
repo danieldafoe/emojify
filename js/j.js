@@ -339,7 +339,6 @@ var ed = {
         },
     ]
 };
-
 (function() {
     window.location.hash = "🙈";
     var b = document.getElementsByTagName('button');
@@ -347,30 +346,39 @@ var ed = {
         var newT = [];
         var t = document.getElementById('convert-text');
         var ct = document.getElementById('converted-text');
+        var et = document.querySelectorAll('.et');
         t = t.value;
 
         // Split each word into array for easier traversing
         var tArr = t.split(' ');
         // Loop through text to convert
-        for (var i = 0, l = tArr.length; i < l; i++) {
-            // Loop through emoji names
-            for (var j = 0, l2 = ed.data.length; j < l2; j++) {
-                console.log()
-                if (tArr[i].toLowerCase().indexOf(ed.data[j].n) !== -1) {
-                    // Replace instance of emoji name in string without
-                    // changing any punctuation, etc
-                    newT.push(tArr[i].toLowerCase().replace(ed.data[j].n, ed.data[j].un));
-                    break;
-                }
-                else {
-                    // If it's the end of the array of emoji, push the unmatched text
-                    if (j === ed.data.length - 1) {
-                        newT.push(tArr[i]);
+        try {
+            console.log(t);
+            for (var i = 0, l = tArr.length; i < l; i++) {
+                // Loop through emoji names
+                for (var j = 0, l2 = ed.data.length; j < l2; j++) {
+                    if (tArr[i].toLowerCase().indexOf(ed.data[j].n) !== -1) {
+                        // Replace instance of emoji name in string without
+                        // changing any punctuation, etc
+                        newT.push(tArr[i].toLowerCase().replace(ed.data[j].n, ed.data[j].un));
+                        break;
+                    }
+                    else {
+                        // If it's the end of the array of emoji, push the unmatched text
+                        if (j === ed.data.length - 1) {
+                            newT.push(tArr[i]);
+                        }
                     }
                 }
             }
+            ct.value = " ";
+            ct.value = newT.join(' ');
+            et[0].innerText = '';
         }
-        ct.value = " ";
-        ct.value = newT.join(' ');
+        catch(err) {
+            et[0].innerHTML = 'Sorry, something went boom. Try again.';
+            t.focus();
+        }
+        
     });
 }());
